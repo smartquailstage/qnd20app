@@ -3,9 +3,9 @@ LABEL maintainer="mau_dev@smartquail.io"
 
 ENV PYTHONUNBUFFERED 1
 
-ENV NODE_VERSION=qnd10app
-ENV NODE_APP_NAME=qnd10app
-ENV USER=qnd10
+ENV NODE_VERSION=qnd20app
+ENV NODE_APP_NAME=qnd20app
+ENV USER=qnd20
 
 
 RUN apk add --no-cache git

@@ -11,7 +11,7 @@ on:
 jobs:
   app_test:
     uses: smartquailstage/qnd20app/.github/workflows/app_test.yaml@main
-  Docker_contauiner_build:
+  Docker_container_build:
     runs-on: ubuntu-latest
     needs: [app_test]
     env:
