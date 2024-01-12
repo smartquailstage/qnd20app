@@ -6,6 +6,7 @@ ENV PYTHONUNBUFFERED 1
 ENV NODE_VERSION=qnd20app
 ENV NODE_APP_NAME=qnd20app
 ENV USER=qnd20
+LATEST_UPDATE = 12012023
 
 
 RUN apk add --no-cache git
@@ -16,7 +17,7 @@ RUN git clone https://github.com/smartquailstage/${NODE_VERSION}.git
 
 #COPY . /qnode0_app
 #COPY ./qnode0_app.dev/qnode0_app_env_dev/qnode0_app/ /qnode0_app
-COPY ./requirements.txt /requirements.txt
+COPY ./${LATEST_UPDATE}.txt /${LATEST_UPDATE}.txt
 COPY ./scripts /scripts
 COPY ./uwsgi_stage.ini /${NODE_VERSION}/${NODE_APP_NAME}/uwsgi_stage.ini
 COPY ./baton.min.js /${NODE_VERSION}/${NODE_APP_NAME}/baton.min.js
