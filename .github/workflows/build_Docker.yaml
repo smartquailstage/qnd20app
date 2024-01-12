@@ -10,7 +10,7 @@ on:
  
 jobs:
   app_test:
-    uses: smartquailstage/${{ secrets.QND_NAME }}/.github/workflows/app_test.yaml@main
+    uses: smartquailstage/qnd20app/.github/workflows/app_test.yaml@main
   Docker_qnd10:
     runs-on: ubuntu-latest
     needs: [app_test]
