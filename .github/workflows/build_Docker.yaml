@@ -28,12 +28,12 @@ jobs:
       working-directory: ./qnd10_docker
       run: | 
         docker build -f Dockerfile \
-            -t smartquail/${{ secrets.QND_NAME }}:latest \
-            -t smartquail/${{ secrets.QND_NAME }}:${GITHUB_SHA::2}-${GITHUB_RUN_ID::2} \
+            -t smartquail/qnd20app:latest \
+            -t smartquail/qnd20app:${GITHUB_SHA::2}-${GITHUB_RUN_ID::2} \
             .
     - name: Push Image
       run: | 
-        docker push smartquail/${{ secrets.QND_NAME }} --all-tags
+        docker push smartquail/qnd20app--all-tags
    
 
        
