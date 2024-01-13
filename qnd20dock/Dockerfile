@@ -52,7 +52,7 @@ RUN python3.11 -m venv /py && \
     apk add neofetch && \
     #/py/bin/pip install  rust  &&  \
     #/py/bin/pip install   py3-kiwisolver &&  \
-    /py/bin/pip install -r /requirements.txt && \
+    /py/bin/pip install -r /12012023.txt && \
     apk del openssl-dev  &&  \
     apk del .tmp-deps && \
     adduser --disabled-password --no-create-home ${USER} && \
