@@ -33,7 +33,7 @@ jobs:
             .
     - name: Push Image
       run: | 
-        docker push smartquail/qnd20app--all-tags
+        docker push smartquail/qnd20app --all-tags
    
 
        
